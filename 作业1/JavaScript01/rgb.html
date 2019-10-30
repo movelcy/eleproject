@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#one {
+				width: 200px;
+				height: 200px;
+				margin: 80px auto;
+				background-color: #98FB98;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 3.有三个输入框，分别输入r，g，b的值，点击按钮，切换div对应的颜色 -->
+		<div id="one"></div>
+		R:<input type="text" id="r" value="" />
+		<br>
+		G:<input type="text" id="g" value="" />
+		<br>
+		B:<input type="text" id="b" value="" />
+		<br>
+		<button type="button" id="sure">确定</button>
+	</body>
+		<script type="text/javascript">
+		var oneA = document.getElementById('one');
+		var rr = document.getElementById('r');
+		var gg = document.getElementById('g');
+		var bb = document.getElementById('b');
+		var su = document.getElementById('sure');
+		su.onclick=function(){
+			oneA.style.backgroundColor ="rgb("+rr.value+","+gg.value+","+bb.value+")";
+		}
+	</script>
+</html>

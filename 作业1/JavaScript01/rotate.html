@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#one{
+				width: 100px;
+				height: 100px;
+				margin: 50px auto;
+				background-color: pink;
+				text-align: center;
+				line-height: 100px;
+				transform: rotateZ(0deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">旋转</div>
+		角度:<input type="text" name="" id="deg"  />
+		<br>
+		<button type="button" id="sure">确定</button>
+	</body>
+	<script type="text/javascript">
+		var oneObj=document.getElementById('one');
+		var degObj=document.getElementById('deg');
+		var sureObj=document.getElementById('sure');
+		sureObj.onclick=function(){
+			oneObj.style.transform="rotateZ("+degObj.value+"deg)";
+			
+		}
+		
+		
+	</script>
+</html>

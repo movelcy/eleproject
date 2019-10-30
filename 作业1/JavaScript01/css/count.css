@@ -1,0 +1,27 @@
+#number1{
+	width: 100px;
+	height: 15px;
+	border: 1px solid silver;
+}
+#number2{
+	width: 100px;
+	height: 15px;
+	border: 1px solid silver;
+	margin: 5px auto;
+}
+#sum{
+	width: 100px;
+	height: 15px;
+	border: 1px solid silver;
+}
+
+#count{
+	width: 50px;
+	height: 25px;
+	margin: 5px 30px;
+	background-color: palegreen;;
+	border: none;
+}
+input:hover{
+	border: 1px solid darkgray;
+}
